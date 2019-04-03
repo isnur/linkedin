@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: '/linkedin/',
   css: {
     loaderOptions: {
       sass: {
