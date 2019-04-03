@@ -102,7 +102,8 @@ export default {
     handleFocus () {
       this.activeSearch = true
       setTimeout(() => {
-      }, 200)
+        this.$refs.search.focus()
+      }, 20)
     },
     handleFocusOut () {
       this.activeSearch = false
