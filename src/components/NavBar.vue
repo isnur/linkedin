@@ -102,7 +102,7 @@ export default {
     handleFocus () {
       this.activeSearch = true
       setTimeout(() => {
-      }, 20)
+      }, 200)
     },
     handleFocusOut () {
       this.activeSearch = false
