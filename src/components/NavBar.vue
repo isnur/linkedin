@@ -87,28 +87,25 @@
 </template>
 
 <script>
-import { setTimeout } from 'timers';
+import { setTimeout } from 'timers'
 export default {
   name: 'NavBar',
   props: {
     msg: String
   },
-  data() {
+  data () {
     return {
       activeSearch: false
     }
   },
   methods: {
-    handleFocus() {
-      console.log(this.activeSearch);
-      this.activeSearch = true;
+    handleFocus () {
+      this.activeSearch = true
       setTimeout(() => {
-        this.$refs.search.focus();
-      }, 20);
+      }, 20)
     },
-    handleFocusOut() {
-      console.log(this.activeSearch);
-      this.activeSearch = false;
+    handleFocusOut () {
+      this.activeSearch = false
     }
   }
 }
